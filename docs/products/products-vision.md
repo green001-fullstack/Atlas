@@ -1,19 +1,53 @@
 # PRODUCT VISION
 
-1. Problem
+## Problem
 
-What problem are we solving?
+### The problem are we solving?
 
-2. Why does it matter?
+Traditional credit assessment relies heavily on formal credit histories, leaving millions of financially responsible individuals and small businesses unable to demonstrate their trustworthiness. As a result, lenders struggle to accurately assess risk, and borrowers are unfairly excluded from access to credit.
 
-Who is suffering because of this problem?
+### Why does it matter? Who is suffering because of this problem?
 
-3. Who are our users?
-4. Who pays for Atlas?
-5. What is the Financial Trust Score?
+Small businesses cannot grow.
 
-Not the algorithm.
+Entrepreneurs cannot expand.
 
-Just explain what it represents.
+People remain financially excluded.
 
-6. What should Atlas never do?
+Lenders miss profitable lending opportunities.
+
+The economy loses productive businesses.
+
+### Who are our users?
+
+Loan officers
+
+Credit analysts
+
+Risk managers
+
+### Who pays for Atlas?
+
+Banks
+
+Fintech companies
+
+Digital Lenders
+
+Cooperatives
+
+### What is the Financial Trust Score?
+
+The Financial Trust Score is an evidence-based assessment of a person's financial behavior, generated from alternative financial signals. It helps lenders understand the likelihood that an applicant demonstrates responsible financial habits, while providing transparent explanations for the assessment.
+
+### What should Atlas never do?
+
+Atlas should never make the final lending decision.
+
+Atlas should never hide why it produced a recommendation.
+
+Atlas should never encourage discrimination.
+
+Atlas should never use data without explicit consent.
+
+Atlas should never present predictions as certainty.
