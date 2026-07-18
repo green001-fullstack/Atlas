@@ -117,3 +117,25 @@ Confidence: High
 #### Recommendation:
 
 Suitable for manual review.
+
+# Persona #3
+
+Amina - Loan Officer 
+
+# Her Problem
+
+She reviews nothing less than 40 loan application a day and the only information she has include the names, business and bank statement of the borrowers. What frustrates her the most is not having enough information to make reasonable decision on who to and who not to grant loan.
+
+## Her fear
+
+### False Positive
+
+Approve someone, they never repay, the bank loses money.
+
+### False Negative
+
+Reject someone, they would have repaid perfectly, the bank loses a good customer.
+
+# How Atlas can help her
+
+Atlas provides a transparent, evidence-based assessment of an applicant's financial behavior, helping loan officers make faster and more informed lending decisions.
