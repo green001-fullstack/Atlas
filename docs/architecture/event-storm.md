@@ -1,3 +1,5 @@
+## EVENTS
+
 Applicant registered
 
 Applicant requested for assessment
@@ -14,7 +16,7 @@ Consent granted
 
 
 
-WORKFLOW
+## WORKFLOW
 
 
 Applicant
