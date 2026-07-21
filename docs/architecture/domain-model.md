@@ -50,3 +50,36 @@ Financial Pattern
 | Financial Behavior | Patterns inferred from financial evidence. |
 | Trust Assessment | Atlas's evaluation of an applicant's financial behavior. |
 | Recommendation | Guidance provided to a loan officer based on the assessment. |
+
+                    Organization
+                         │
+                  has many Users
+                         │
+                         ▼
+                Organization User
+                         │
+             requests Assessment
+                         │
+                         ▼
+                Assessment Request
+                    │          │
+                    │          │
+             for Applicant      │
+                    │          │
+                    ▼          │
+                Applicant       │
+                    │           │
+        has many Financial Evidence
+                    │
+                    ▼
+          Financial Evidence
+                    │
+             used to generate
+                    ▼
+            Trust Assessment
+              │      │      │
+              │      │      │
+              ▼      ▼      ▼
+      Recommendation
+      Explanation
+      Fraud Alert
