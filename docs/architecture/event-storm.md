@@ -56,3 +56,23 @@ Loan Officer Reviews
     │
     ▼
 Decision Recorded
+
+
+
+
+# ANOTHER FLOW(SUMMARY)
+
+Applicant
+        │
+        ▼
+Financial Evidence
+        │
+        ▼
+Financial Profile
+        │
+        ▼
+Trust Assessment
+        │
+        ├── Recommendation
+        ├── Explanation
+        └── Fraud Alert
