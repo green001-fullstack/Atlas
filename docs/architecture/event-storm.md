@@ -19,43 +19,40 @@
 The full end-to-end process, from applicant registration to final decision:
 
 ```
- 1. Applicant
+ 1. Applicant Registered
         │
         ▼
- 2. Registers
+ 2. Consent Granted
         │
         ▼
- 3. Grants Consent
+ 3. Assessment Requested
         │
         ▼
- 4. Uploads Financial Evidence
+ 4. Financial Evidence Uploaded
         │
         ▼
- 5. Requests Assessment
+ 5. Financial Evidence Validated
         │
         ▼
- 6. Evidence Validated
+ 6. Financial Profile Built/updated
         │
         ▼
- 7. Financial Profile Built
+ 7. Trust Assessment Generated
         │
         ▼
- 8. Trust Assessment Generated
+ 8. Fraud Analysis Completed
         │
         ▼
- 9. Fraud Analysis Completed
+9. Explanation Generated
         │
         ▼
-10. Explanation Generated
+10. Recommendation Generated
         │
         ▼
-11. Recommendation Generated
+11. Loan Officer Reviews
         │
         ▼
-12. Loan Officer Reviews
-        │
-        ▼
-13. Decision Recorded
+12. Decision Recorded
 ```
 
 ### Step-by-step breakdown
