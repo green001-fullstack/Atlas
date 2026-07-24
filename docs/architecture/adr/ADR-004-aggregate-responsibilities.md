@@ -1,0 +1,1 @@
+Decision: Aggregates are the final authority for protecting domain invariants. Collaborating Domain Services and Value Objects may validate data, but an Aggregate never assumes external components have preserved its consistency.

@@ -44,6 +44,8 @@ Assessment
 ## Business Invariant
 - There can only be one active assessment per assessment request
 - Recommendation must always match the current Trust Score.
+- Confidence Score must be between 0 and 100.
+- A completed assessment cannot be modified.
 
 # Evidence Aggregate
 
