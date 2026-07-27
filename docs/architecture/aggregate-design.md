@@ -29,10 +29,10 @@ Applicant
 - Organization Reference
 
 
-# Assessment Aggregate
+# Trust Assessment Aggregate
 
 ## Aggregate Root
-Assessment
+Trust Assessment
 
 ## Contains
 - Financial Trust Score
