@@ -7,7 +7,6 @@ Applicant
 - EmailAddress
 - PhoneNumber
 - Consent
-- FinancialProfile
 
 ## Business Invariants
 - Applicant must grant consent before assessment.
@@ -40,6 +39,7 @@ Trust Assessment
 - Recommendation
 - Explanation
 - Fraud Alert
+- FinancialProfile
 
 ## Business Invariant
 - There can only be one active assessment per assessment request
