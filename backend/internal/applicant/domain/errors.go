@@ -1,0 +1,12 @@
+package domain
+
+import "errors"
+
+var ErrInvalidConsent = errors.New("invalid consent")
+var ErrConsentNotGranted = errors.New("consent not granted")
+var ErrConsentAlreadyWithdrawn = errors.New("consent already withdrawn")
+var ErrAssessmentAlreadyRequested = errors.New("assessment already withdrawn")
+
+
+
+
