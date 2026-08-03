@@ -31,9 +31,6 @@ func (c *Consent) Version() (string){
 }
 
 func (c *Consent) GrantedAt() time.Time {
-	if c.grantedAt.IsZero() {
-		return time.Time{}
-	}
 	return c.grantedAt
 }
 
