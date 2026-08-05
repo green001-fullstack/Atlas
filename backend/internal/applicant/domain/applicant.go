@@ -2,6 +2,7 @@ package domain
 
 import(
 	"github.com/green001-fullstack/atlas/backend/internal/applicant/domain/valueobjects"
+	"time"
 )
 
 type Applicant struct{
@@ -24,9 +25,11 @@ func NewApplicant( id string, name valueobjects.Name, email valueobjects.EmailAd
 		phoneNumber: phone,
 	}
 
-	applicant.domainEvents = append(applicant.domainEvents, ApplicantRegistered{
-		applicantID: applicant.id,
-	})
+	applicant.record(ApplicantRegistered{
+	applicantID: applicant.id,
+	email:	applicant.Email().String(),
+	name: applicant.Name().String(),
+})
 
 	return  applicant, nil
 	}
@@ -62,4 +65,45 @@ func (a *Applicant) DomainEvents() []DomainEvent{
 
 func (a *Applicant) ClearDomainEvents() {
 	a.domainEvents = nil
+}
+
+// A function that helps to add domain events
+func (a *Applicant) record(event DomainEvent) {
+	a.domainEvents = append(a.domainEvents, event)
+}
+
+func (a *Applicant) GrantConsent(version string, grantedAt time.Time) error{
+	if a.HasConsent(){
+		return ErrConsentAlreadyGranted
+	}
+
+	consent, err := NewConsent(version, grantedAt)
+	if err != nil{
+		return err
+	}
+
+	a.consent = consent
+
+	a.record(ConsentGranted{
+		applicantID : a.id,
+		version : version, 
+		grantedAt: grantedAt,
+	}) 
+	return nil
+}
+
+func (a *Applicant) WithdrawConsent( withdrawnAt time.Time) error{
+	if a.consent == nil {
+		return ErrConsentNotGranted
+	}
+
+	if err := a.consent.Withdraw(withdrawnAt); err != nil {
+		return err
+	}
+
+	a.record(ConsentWithdrawn{
+		applicantID: a.id,
+		withdrawnAt: withdrawnAt,
+	})
+	return nil
 }

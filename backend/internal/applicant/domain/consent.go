@@ -45,3 +45,13 @@ func (c *Consent) WithdrawnAt() (time.Time, bool) {
 func (c *Consent) IsActive()bool {
 	return c.withdrawnAt == nil
 }
+
+func (c *Consent) Withdraw (withdrawnAt time.Time) error{
+	if !c.IsActive(){
+		return ErrConsentAlreadyWithdrawn
+	}
+
+	c.withdrawnAt = &withdrawnAt
+	return nil
+}
+
