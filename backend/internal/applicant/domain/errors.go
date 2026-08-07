@@ -9,6 +9,7 @@ var ErrAssessmentAlreadyRequested = errors.New("assessment already withdrawn")
 var ErrInvalidApplicant = errors.New("invalid applicant")
 var ErrConsentAlreadyGranted = errors.New("Consent already granted")
 var ErrApplicantAlreadyExists = errors.New("applicant already exists")
+var ErrApplicantNotFound = errors.New("applicant not found")
 
 
 
