@@ -6,16 +6,7 @@ import (
 )
 
 func TestNewConsent_WithValidData(t *testing.T) {
-	grantedAt := time.Date(
-		2026,
-		time.August,
-		3,
-		10,
-		0,
-		0,
-		0,
-		time.UTC,
-	)
+	grantedAt := time.Date(2026, time.August, 3, 10, 0, 0, 0, time.UTC)
 
 	consent, err := NewConsent("v1", grantedAt)
 
