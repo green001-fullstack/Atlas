@@ -8,7 +8,7 @@ import (
 )
 
 type RegisterApplicantHandler struct {
-    repository     domain.Repository
+    repository     domain.ApplicantRepository
     eventPublisher ports.EventPublisher
 }
 
@@ -16,7 +16,7 @@ type RegisterApplicantResult struct {
     ApplicantID string
 }
 
-func NewRegisterApplicantHandler( repository domain.Repository, eventPublisher ports.EventPublisher) *RegisterApplicantHandler {
+func NewRegisterApplicantHandler( repository domain.ApplicantRepository, eventPublisher ports.EventPublisher) *RegisterApplicantHandler {
     return &RegisterApplicantHandler{
         repository: repository,
         eventPublisher: eventPublisher,
